@@ -1,0 +1,428 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40;
+    padding: 20px;
+    color: white;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem;
+    color: #d4af37;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .hero {
+    position: relative;
+    height: 400px;
+    background: url('../images/portada.JPEG') no-repeat center center/cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    font-family: 'Crimson Text', serif;
+  }
+  
+  .btn {
+    background-color: #b71c1c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #d4af37;
+    color: #004d40;
+  }
+  
+  footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  /* Ajustes para imágenes circulares */
+.category img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #d4af37;
+    display: block;
+    margin: auto;
+  }
+  
+  .category h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Estilo de la sección de reseñas */
+  .review-carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px;
+  }
+  
+  .review {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .review img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  
+  /* Estilo de valores */
+  .valores-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  /* Organización horizontal para los productos */
+.product-categories {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajustar los productos si no caben en una línea */
+    justify-content: space-around; /* Espaciado uniforme entre productos */
+    gap: 20px; /* Espacio entre las categorías */
+  }
+  
+  .category {
+    text-align: center;
+    width: 150px; /* Ajusta el ancho de cada categoría */
+  }
+  
+  .category img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace las imágenes circulares */
+    border: 5px solid #d4af37; /* Borde dorado */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    margin-bottom: 10px; /* Espaciado entre la imagen y el título */
+  }
+  
+  .category h3 {
+    font-size: 1rem;
+    color: #333;
+  }
+  /* Estilo para títulos */
+.section-title {
+    text-align: center;
+    font-size: 3rem; /* Tamaño más grande */
+    font-family: 'Crimson Text', serif;
+    color: #d4af37; /* Color dorado */
+    margin-bottom: 30px;
+  }
+  
+  .valor-title {
+    font-size: 1.5rem;
+    color: #d4af37; /* Color dorado */
+    font-family: 'Crimson Text', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Estilo para valores de marca */
+  .valores-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .valor-img {
+    width: 120px; /* Tamaño reducido */
+    height: 120px; /* Tamaño reducido */
+    border-radius: 50%; /* Mantiene el estilo circular */
+    margin-bottom: 15px; /* Espaciado entre la imagen y el texto */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+  }
+  
+  .valor p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+/* Ajuste específico para la imagen de envíos */
+.valor-img[src*="envios.png"] {
+    width: auto; /* Permite que el ancho se ajuste automáticamente */
+    height: 120px; /* Ajusta la altura */
+    object-fit: contain; /* Asegura que toda la imagen se vea dentro del contenedor */
+    margin-bottom: 15px;
+  }
+  /* Ajuste específico para la imagen de envíos */
+.valor-img[src*="envios.png"] {
+    border-radius: 0; /* Elimina el borde circular */
+    width: auto; /* Ajusta automáticamente el ancho */
+    height: 120px; /* Ajusta la altura de la imagen */
+    object-fit: contain; /* Asegura que la imagen completa sea visible */
+    margin-bottom: 15px;
+  }
+/* Encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004d40;
+    padding: 20px;
+    color: white;
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-family: 'Crimson Text', serif;
+    font-size: 1.5rem;
+    color: #d4af37;
+  }
+  
+  .menu-toggle {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none; /* Visible en pantallas pequeñas */
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar li {
+    margin: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .icon-user:hover,
+  .icon-cart:hover {
+    color: #d4af37;
+  }
+  
+ /* Navbar desplegable para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Muestra el botón desplegable */
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .navbar {
+      display: none; /* Esconde inicialmente la barra de navegación */
+      flex-direction: column; /* Ordena los elementos de forma vertical */
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%; /* Ocupa todo el ancho */
+      background-color: #004d40; /* Color de fondo */
+      padding: 20px 0;
+      gap: 15px; /* Espaciado entre los enlaces */
+      z-index: 1000;
+    }
+  
+    .navbar.active {
+      display: flex; /* Muestra la barra cuando está activa */
+    }
+  
+    .navbar li {
+      text-align: center; /* Centra los elementos del menú */
+    }
+  
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 0;
+      display: block; /* Asegura que cada enlace ocupe una línea */
+      transition: background-color 0.3s;
+    }
+  
+    .navbar a:hover {
+      background-color: #d4af37; /* Efecto de hover */
+      color: #004d40;
+    }
+  }
+  /* Estilos de reseñas */
+.reseñas {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.review-carousel {
+  display: flex;
+  overflow: hidden;
+  gap: 20px;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.review {
+  flex: 0 0 300px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Estilos para estrellas y verificación */
+.stars {
+  font-size: 1.2rem; /* Tamaño del texto de las estrellas */
+  color: #ffd700; /* Color dorado para las estrellas */
+  display: inline-flex; /* Asegura que las estrellas y el ícono estén alineados */
+  align-items: center; /* Centra verticalmente el ícono con las estrellas */
+  gap: 5px; /* Espacio entre las estrellas y el ícono */
+}
+
+.verified-icon {
+  width: 0.9em; /* Igual al tamaño del texto de las estrellas */
+  height: 0.9em; /* Igual al tamaño del texto de las estrellas */
+  vertical-align: middle; /* Alinea el ícono con las estrellas */
+  margin-left: 5px; /* Espacio entre el ícono y las estrellas */
+}
+
+/* Redes Sociales */
+.redes-sociales {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f4f0; /* Fondo sutil */
+  color: #333; /* Texto oscuro */
+}
+
+.redes-sociales .section-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 2.5rem;
+  color: #d4af37; /* Dorado */
+  margin-bottom: 20px;
+}
+
+.redes-sociales p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555; /* Texto suave */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente los íconos */
+  align-items: center; /* Centra verticalmente */
+  gap: 30px; /* Espacio entre los íconos */
+}
+
+.social-icon img {
+  width: 60px; /* Tamaño del ícono */
+  height: 60px;
+  border-radius: 50%; /* Forma circular */
+  border: 3px solid #d4af37; /* Borde dorado */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animaciones */
+}
+
+.social-icon img:hover {
+  transform: scale(1.1); /* Aumenta el tamaño */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+}

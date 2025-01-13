@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noblezza Joyería</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Encabezado con barra de navegación desplegable -->
+<header class="header">
+  <div class="header-content">
+    <img src="images/logo.PNG" alt="Logo Noblezza Joyería" class="logo-img">
+    <h1 class="logo-text">Noblezza Joyería</h1>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </div>
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="#productos" class="nav-link">Productos</a></li>
+      <li><a href="#reseñas" class="nav-link">Reseñas</a></li>
+      <li><a href="#valores" class="nav-link">Valores</a></li>
+      <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      <li><a href="#wishlist" class="nav-link">Lista de Deseos</a></li>
+      <li><a href="#redes-sociales" class="nav-link">Redes Sociales</a></li>
+    </ul>
+  </nav>
+  <div class="header-icons">
+    <span class="icon-user">👤</span>
+    <span class="icon-cart" id="cart-icon">🛒 <span id="cart-count">0</span></span>
+  </div>
+</header>
+
+  <!-- Portada -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Oro de 18K: Elegancia y Confianza</h2>
+      <p>Más de 20 años ofreciendo cadenas, pulseras, anillos y aretes de la más alta calidad.</p>
+      <a href="#productos" class="btn">Explorar Colección</a>
+    </div>
+  </section>
+
+  <!-- Sección de productos -->
+  <section id="productos" class="productos">
+    <h2 class="section-title">Nuestra Colección</h2>
+    <div class="product-categories">
+      <div class="category">
+        <img src="images/dije.jpg" alt="Dijes">
+        <h3>Dijes</h3>
+      </div>
+      <div class="category">
+        <img src="images/anillos.jpg" alt="Anillos">
+        <h3>Anillos</h3>
+      </div>
+      <div class="category">
+        <img src="images/pendientes.jpg" alt="Pendientes">
+        <h3>Pendientes</h3>
+      </div>
+      <div class="category">
+        <img src="images/cadenas.jpg" alt="Cadenas">
+        <h3>Cadenas</h3>
+      </div>
+      <div class="category">
+        <img src="images/piedras-preciosas.jpg" alt="Piedras Preciosas">
+        <h3>Piedras Preciosas</h3>
+      </div>
+      <div class="category">
+        <img src="images/brazaletes.jpg" alt="Brazaletes">
+        <h3>Brazaletes</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de reseñas -->
+  <section id="reseñas" class="reseñas">
+    <h2 class="section-title">Reseñas de Nuestros Clientes</h2>
+    <div class="carousel-container">
+      <button class="arrow left" id="left-arrow">←</button>
+      <div class="review-carousel">
+        <div class="review">
+          <img src="images/customer1.jpg" alt="Cliente 1" class="review-img">
+          <h4>Camilo Gómez</h4>
+          <p class="review-date">2024-05-10</p>
+          <span class="stars">★★★★★ <img src="images/verified-icon.svg" alt="Verificado" class="verified-icon"></span>
+          <p>"Excelente servicio, los mejores diseños en joyería."</p>
+        </div>
+        <div class="review">
+          <img src="images/customer2.jpg" alt="Cliente 2" class="review-img">
+          <h4>Andrea Reyes</h4>
+          <p class="review-date">2024-06-15</p>
+          <span class="stars">★★★★☆ <img src="images/verified-icon.svg" alt="Verificado" class="verified-icon"></span>
+          <p>"Muy rápidos en la entrega y la calidad es buena, oro 18k garantizado."</p>
+        </div>
+        <div class="review">
+          <img src="images/customer3.jpg" alt="Cliente 3" class="review-img">
+          <h4>Sofía López</h4>
+          <p class="review-date">2024-07-20</p>
+          <span class="stars">★★★★★ <img src="images/verified-icon.svg" alt="Verificado" class="verified-icon"></span>
+          <p>"La mejor experiencia de compra, sin duda volveré a comprarles."</p>
+        </div>
+        <div class="review">
+          <img src="images/customer4.jpg" alt="Cliente 4" class="review-img">
+          <h4>Paula Sánchez</h4>
+          <p class="review-date">2024-08-10</p>
+          <span class="stars">★★★★☆ <img src="images/verified-icon.svg" alt="Verificado" class="verified-icon"></span>
+          <p>"Precios competitivos y diseños únicos."</p>
+        </div>
+        <div class="review">
+          <img src="images/customer5.jpg" alt="Cliente 5" class="review-img">
+          <h4>Ana Martínez</h4>
+          <p class="review-date">2024-09-05</p>
+          <span class="stars">★★★★★ <img src="images/verified-icon.svg" alt="Verificado" class="verified-icon"></span>
+          <p>"Atención al cliente inigualable. Muy confiables y envio rapido a Bogotá."</p>
+        </div>
+      </div>
+      <button class="arrow right" id="right-arrow">→</button>
+    </div>
+  </section>
+
+<!-- Valores de marca -->
+<section id="valores" class="valores">
+  <h2 class="section-title">Nuestros Valores</h2>
+  <div class="valores-list">
+    <div class="valor">
+      <img src="images/calidadyseguridad.png" alt="Calidad y Seguridad" class="valor-img">
+      <h3 class="valor-title">Calidad y Seguridad</h3>
+      <p>Todas nuestras joyas son en oro de 18 kilates. Somos fabricantes e importadores de cadena Italiana, ley 750.</p>
+    </div>
+    <div class="valor">
+      <img src="images/envios.png" alt="Envíos Internacionales" class="valor-img">
+      <h3 class="valor-title">Envíos Internacionales</h3>
+      <p>Realiza tu compra online y recibe en casa. Envíos a todo el mundo en 7 días y a EE.UU. en 4 días.</p>
+    </div>
+    <div class="valor">
+      <img src="images/disenos-personalizados.png" alt="Diseños Personalizados" class="valor-img">
+      <h3 class="valor-title">Diseños Personalizados</h3>
+      <p>En nuestra joyería sabemos que lo más importante son tus ideas. Cotiza tu joya perfecta con nosotros.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2 class="section-title">Contáctanos</h2>
+    <p>Para más información, escríbenos a contacto@noblezza.com o llámanos al +52 55 1234 5678.</p>
+  </section>
+
+  <!-- Sección de Redes Sociales -->
+<section id="redes-sociales" class="redes-sociales">
+  <h2 class="section-title">Síguenos en Redes Sociales</h2>
+  <p>Conéctate con nosotros y sé parte de nuestra comunidad en línea.</p>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/noblezzajoya?igsh=MTd2dDA2c2d1aDR0aQ==" target="_blank" class="social-icon">
+      <img src="images/instagram-icon.png" alt="Instagram">
+    </a>
+    <a href="https://www.tiktok.com/@noblezzajoyeria?_t=ZS-8swMEwAyTAd&_r=1" target="_blank" class="social-icon">
+      <img src="images/tiktok-icon.png" alt="TikTok">
+    </a>
+    <a href="https://www.facebook.com/share/1BFqJBDurD/?mibextid=wwXIfr" target="_blank" class="social-icon">
+      <img src="images/facebook-icon.png" alt="Facebook">
+    </a>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Noblezza Joyería. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
